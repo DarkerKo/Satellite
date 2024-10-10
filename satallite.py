@@ -15,15 +15,15 @@ import time
 EARTH_PERIMETER = 40075
 EARTH_RADIUS = 6360
 
-G = 6.674 * 10**-11  # 万有引力常数 (m^3 kg^-1 s^-2)
-M = 5.972 * 10**24   # 地球的质量 (kg)
+G = 6.674 * 10**-11  # 万有引力常数 (m^3 kg^-1 s^-2)， gravitational constant
+M = 5.972 * 10**24   # 地球的质量 (kg)，   Mass of the Earth (kg)
 
 
 # 节点类(卫星类的父类)
 class Node:
     def __init__(self, name, position):
         self.name = name
-        self.position = np.array(position) #地面基站的位置， 或者卫星相对于地面的投影的圆心位置
+        self.position = np.array(position) #地面基站的位置， 或者卫星相对于地面的投影的圆心位置， The location of the ground base station, or the center of the satellite's projection relative to the ground
 
 
 # 定义卫星类，继承自节点
