@@ -7,6 +7,11 @@ import time
 # 这里是顺行轨道，不过用的是卫星相对于地面的速度。所以没关系
 # 这里只有一个轨道高度， 2000Km,所以卫星旋转的角速度和对地覆盖半径都是固定的
 
+# Prograde orbit (same direction as the Earth's rotation): Assuming a LEO satellite's speed is 7.8 km/s, and the Earth's rotation speed at the equator is 0.465 km/s, then the satellite's speed relative to the Earth in the prograde orbit is about 7.8 km/s - 0.465 km/s = 7.335 km/s.
+# Retrograde orbit (opposite to the Earth's rotation): For example: If the satellite's speed is 7.8 km/s and the Earth's rotation speed is 0.465 km/s, then the satellite's speed relative to the Earth in the retrograde orbit is about 7.8 km/s + 0.465 km/s = 8.265 km/s.
+# This is a prograde orbit, but the speed of the satellite relative to the Earth is used. So it doesn't matter
+# There is only one orbital altitude here, 2000Km, so the angular velocity of the satellite's rotation and the radius of coverage of the Earth are fixed
+
 EARTH_PERIMETER = 40075
 EARTH_RADIUS = 6360
 
